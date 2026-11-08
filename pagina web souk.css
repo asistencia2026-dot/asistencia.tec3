@@ -99,17 +99,20 @@ body {
     left: 20px;
 }
 .sidebar {
-    height: 100%;
+    height: auto;
+    max-height: 85vh;
     width: 0;
     position: fixed;
     z-index: 1000;
-    top: 0;
+    top: 10px;
     left: 0;
     background-color: #020c2b;
     overflow-x: hidden;
     overflow-y: auto;
-    transition: width 0.3s ease;
+    transition: 0.3s;
     padding-top: 50px;
+    padding-bottom: 10px;
+    border-radius: 0 15px 15px 0;
     box-sizing: border-box;
 }
 
@@ -1272,6 +1275,19 @@ h1, h2, h3, h4, h5, h6 {
     .sidebar a {
         padding: 12px 10px;
         font-size: 13px;
+    }
+
+}
+@media (max-width: 600px) {
+
+    .sidebar {
+        max-height: 75vh;
+    }
+
+    .sidebar a {
+        padding: 9px 10px;
+        font-size: 12px;
+        line-height: 1.3;
     }
 
 }
