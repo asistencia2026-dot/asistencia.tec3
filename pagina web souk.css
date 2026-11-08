@@ -1243,3 +1243,44 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 300px;
     }
 }
+
+
+/* DESPLAZAMIENTO ENTRE SECCIONES: todas permanecen visibles */
+html {
+    scroll-behavior: smooth;
+}
+
+#inicio,
+#quienes,
+#hacemos,
+#objetivo,
+#necesidad,
+#contacto {
+    scroll-margin-top: 20px;
+}
+/* MENÚ COMPACTO EN CELULARES */
+@media screen and (max-width: 600px) {
+
+    #menu.sidebar {
+        height: auto !important;
+        max-height: 70vh;
+        padding: 35px 0 5px 0 !important;
+        overflow-y: auto;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    #menu.sidebar a {
+        display: block;
+        padding: 7px 12px !important;
+        margin: 0 !important;
+        font-size: 13px !important;
+        line-height: 1.2 !important;
+    }
+
+    #menu.sidebar .close-btn {
+        top: 3px;
+        left: 12px;
+        padding: 0 5px !important;
+    }
+}
