@@ -589,12 +589,11 @@ function abrirMenu() {
     const menu = document.getElementById("menu");
 
     if (window.innerWidth <= 768) {
-        menu.style.width = "72vw";
+        menu.style.setProperty("width", "60vw", "important");
     } else {
-        menu.style.width = "min(82vw, 650px)";
+        menu.style.setProperty("width", "min(82vw, 650px)", "important");
     }
 }
-
 function cerrarMenu() {
     document.getElementById("menu").style.width = "0";
 }
