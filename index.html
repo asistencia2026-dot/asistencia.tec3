@@ -584,11 +584,14 @@
 </section>
 
 <script>
-
-
 function abrirMenu() {
     const menu = document.getElementById("menu");
-    menu.style.width = "min(82vw, 650px)";
+
+    if (window.innerWidth <= 768) {
+        menu.style.width = "72vw";
+    } else {
+        menu.style.width = "min(82vw, 650px)";
+    }
 }
 
 function cerrarMenu() {

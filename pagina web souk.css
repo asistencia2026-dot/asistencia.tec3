@@ -1245,3 +1245,12 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 }
+@media (max-width: 768px) {
+
+    .sidebar {
+        top: 16px;
+        bottom: 5vh;
+        border-radius: 0 38px 38px 0;
+    }
+
+}
